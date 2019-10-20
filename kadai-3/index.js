@@ -1,0 +1,2 @@
+const day = parseInt(process.argv[2])
+if (score >= 1023){console.log('あなたは食いしん坊な性格です')}　else if (score >= 0830){console.log('あなたは寂しがりやな性格です')}　else if(score <= 0622){console.log('あなたはのんびり屋な性格です')} else if(score <= 0402){console.log('あなたはなんでも楽しめる性格です')} else{console.log('あなたは空を見上げるのが好きな性格です')}
