@@ -6,12 +6,12 @@ setTimeout(
     console.log('Hello!')
     setTimeout(
         () => {
-            console.log('Bye!')
+            console.log('Congratulation!')
         },
-        2000
+        7000
     )
 },
-3000
+1000
 )
 
 setTimeout(
