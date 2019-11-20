@@ -26,6 +26,6 @@ for (let  i = 0; i < keys.length; i = i + 1) {
 // of キーワードでより簡単にループができる！
 for(let key of keys){
     const value = profile[key];
-    const text = '私の' + key + ' は、' + value + 'です。'
+    const text = 'かつて私の' + key + ' は、' + value + 'であった。'
     console.log(text);
 }
