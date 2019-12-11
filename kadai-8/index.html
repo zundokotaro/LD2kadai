@@ -1,13 +1,20 @@
+
 <html>
  <body>
-  <button id="button">実行</button>
-  <h1>こんにちは</h1>
-   <script>
-    const input = document.getElementById('my-value')
-    const button = document.getElementById('button')
-    button.addEventListener
-    alert('hello')
-   </script>
+  <input id= "moji" type= "text" value= "cccc" />
+   <botton id= "jikkou">実行</botton>
+    <script>
+      const moji = document.getElementById('moji')
+      const jikkou = document.getElementById('jikkou')
+
+      jikkou.addEventListener("click", () => {
+      alert("Hello")
+      })
+
+      moji.addEventListener("mouseenter", (e) => {
+      console.log("mouseenter")
+       })
+    </script>
  </body>
 </html>
 
