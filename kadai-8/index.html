@@ -1,22 +1,37 @@
 
 <html>
- <body>
-  <input id= "moji" type= "text" value= "cccc" />
-   <botton id= "jikkou">実行</botton>
-    <script>
-      const moji = document.getElementById('moji')
-      const jikkou = document.getElementById('jikkou')
-
-      jikkou.addEventListener("click", () => {
-      alert("Hello")
-      })
-
-      moji.addEventListener("mouseenter", (e) => {
-      console.log("mouseenter")
-       })
-    </script>
+<head>
+<style>
+ button{
+      font-size: 50px;
+      color: blue;
+      background-coler: lime;
+ }
+</style>
+</head>
+ <body> 
+      <botton　id="button">今日のラッキーアイテムは？</botton>
+      <script>
+        const button = document.getElementById('button')
+        button.addEvebtListener('click', () => {
+            const num = Math.random()
+            if(num < 0.3){
+                alert('うさぎのぬいぐるみ！')
+            }　else if (num < 0.4) {
+                alert('はな柄のかさ！')
+            } else if (num < 0.6) {
+                alert('マウンテンブーツ！')
+            } else if (num < 0.7){
+                alert('鹿せんべい！')
+            } else if (num < 0.8){
+                alert('ところてん！')
+            } else if (num <0.95){
+                alert('ねこじゃらし！')
+            } else {
+                alert('ヘリウム風船！')
+            }
+            alert(num)
+        })
+      </script>
  </body>
 </html>
-
-
-
