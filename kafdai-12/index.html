@@ -1,0 +1,22 @@
+<hyml>
+ <head>
+  <style>
+   button{
+       font-size: 50px;
+       color: blue;
+       background-color: lime
+   }
+  </style>
+ </head>
+  <body>
+      <botton id="botton">今日の運勢は？</botton>
+      <script>
+          const button = document.getElementById('botton')
+          button.addEvebtListener('click', () => {
+            fetch('https://4000-f159682-c19e-4657-9f9a-06c2d87b08f7.ws-ap01.gitpot.io/')
+            .then(res => res.text())
+            .then(data => alert(data))
+          )}
+ 　　　</script>
+ 　</body>
+</html>
