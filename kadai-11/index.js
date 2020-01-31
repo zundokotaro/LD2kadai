@@ -1,15 +1,10 @@
-const http = require('http')
-const url = require('url')
-const querysyring = require('querystring')
+const http = require('http');
+const server = http.createServer((req, res) => {
 
-const server = http.createServer((request, response) => {
-    const parstUrl = url.parse(req.url)
-    console.log(parseUrl)
+    res.setHeader('Access-Control-Allow-Origin', '*')
+    res.write('Hello world!')
+    res.end()
+});
 
-
-    response.setHeader('Access-Control-Allow-Origin', '*')
-    response.write('Hello world!')
-    response.end()
-})
-server.listen(4000)
+server.listen(4000);
 console.log("The server is listening...")
