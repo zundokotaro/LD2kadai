@@ -1,5 +1,6 @@
 
 <html>
+ <meta charset="utf8">
  <head>
   <style>
    button{
@@ -14,7 +15,7 @@
       <script>
           const button = document.getElementById('button')
           button.addEventListener('click', () => {
-            fetch('https://4000-f159682-c19e-4657-9f9a-06c2d87b08f7.ws-ap01.gitpod.io/')
+            fetch("https://4000-f159682-c19e-4657-9f9a-06c2d87b08f7.ws-ap01.gitpod.io/")
             .then(res => res.text())
             .then(data => alert(data))
           )}
