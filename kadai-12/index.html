@@ -5,17 +5,23 @@
   <style>
    button{
        font-size: 50px;
-       color: blue;
-       background-color: lime
+       color: white;
+       background-color: green
+   }
+   span{
+       font-size: 24px;
+       color: red;
+       font-weight: bold
    }
   </style>
  </head>
   <body>
-      <button id="botton">今日の運勢占い</button>
+      <button id="button">今日はどんな日？</button>
+      <span>クリックしてcheck！</span>
       <script>
           const button = document.getElementById('button')
           button.addEventListener('click', () => {
-            fetch("https://4000-f159682-c19e-4657-9f9a-06c2d87b08f7.ws-ap01.gitpod.io/")
+            fetch('https://4000-f159682-c19e-4657-9f9a-06c2d87b08f7.ws-ap01.gitpod.io/path/example?key=value')
             .then(res => res.text())
             .then(data => alert(data))
           )}
